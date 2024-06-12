@@ -1,8 +1,4 @@
-import string
-
-alphabet = ""
-for lettres in string.ascii_letters:
-    if lettres.islower():
-     alphabet += lettres
-print(alphabet)
-print("")
+for i in range(97, 123):
+    print(chr(i), end ='')
+print()
+print()
