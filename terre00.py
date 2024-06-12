@@ -1,9 +1,8 @@
 import string
 
-
-alphabet_min = ""
+alphabet = ""
 for lettres in string.ascii_letters:
     if lettres.islower():
-     alphabet_min += lettres
-print(alphabet_min)
+     alphabet += lettres
+print(alphabet)
 print("")
