@@ -1,8 +1,9 @@
-nombre_str = input("Veuillez insérer un nombre entier SVP: ")
-nombre_int = int(nombre_str)
-reste = nombre_int % 2
+import sys
+
+nombre = int(sys.argv[1])
+reste = nombre % 2
 if reste == 0:
-    print(f"le nombre {nombre_int} est pair")
+    print(f"le nombre {nombre} est pair")
 else:
-    print(f"le nombre {nombre_int} est impair")
+    print(f"le nombre {nombre} est impair")
     
