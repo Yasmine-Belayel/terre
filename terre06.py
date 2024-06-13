@@ -8,3 +8,12 @@ while True:
         break
     else:
         print("Erreur! Veuillez entrer des lettres")
+
+
+"""import sys
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+lettre_donnee = sys.argv[1:]
+for lettre_donnee in alphabet:
+    indice = alphabet.index(lettre_donnee)
+print(indice)"""
