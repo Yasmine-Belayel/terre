@@ -1,4 +1,3 @@
-from pathlib import Path
+import sys 
 
-nom_fichier = Path(__file__).name
-print(nom_fichier)
+print(sys.argv[0])
