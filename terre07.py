@@ -1,15 +1,10 @@
-chaine_brute = input("Entrez vos caractères hors nombres dans une seule chaîne délimitée par des guillemets: ")
-indice_debut = chaine_brute[0]
-indice_fin = chaine_brute[-1]
-if indice_debut == indice_fin == '"':
-    chaine = chaine_brute[1:-1]
-    liste = [chaine]
-    compteur = 0
-    compteur += 1
-    if 
-    #if chaine.isalpha():
-        #print(chaine)
-    #else:
-        #print("Erreur! Veuillez entrer des caractères valides")
+import sys
+
+
+if len(sys.argv) != 2:   
+    print("Erreur! Merci de saisir UN SEUL argument pour exécuter le programme")
 else:
-    print("Erreur! Veuillez respecter la syntaxe définie")
+    if sys.argv[1].isdigit():
+        print("Erreur! Le programme accepte uniquement une chaîne de caractères")
+    else:   
+        print(f"Votre chaîne de caractères contient {len(sys.argv[1])} caractères")
