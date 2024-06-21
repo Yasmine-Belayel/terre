@@ -1,23 +1,16 @@
-def nombre_entier(a, b):
-        int(a)
-        int(b)
-        return True
+import sys
 
-
-base = ""
-while not base == " ":
-    base = input("Entrez le nombre de base: ")
-    exposant = input("Entrez le nombre exposant: ")
-    if nombre_entier:
-        try:
-            base_int = int(base)
-            exposant_int = int(exposant)
-            if exposant_int > 0:
-                resultat = base_int ** exposant_int
-                print(f"{base_int} {exposant_int}")
-                print(resultat)
-                break
-            else:
-                print("L'exposant doit être un nombre positif")
-        except:
-            print("Erreur! Entrez des nombres valides")
+if len(sys.argv) != 3:   
+    print("Erreur! Merci de saisir deux arguments pour exécuter le programme")
+else:
+    try:
+        base = int(sys.argv[1])
+        exposant = int(sys.argv[2])
+    except:
+        print("Erreur! Veuillez entrer uniquement des chiffres")
+    else:
+        if exposant >= 0:
+            resultat = base ** exposant
+            print(f"{base} ** {exposant}: {resultat}")
+        else:
+            print("Erreur! Merci d'entrer des nombres valides")
