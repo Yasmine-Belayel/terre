@@ -1,6 +1,5 @@
 import sys
 
-
 arguments = sys.argv[1:]
 try:
     for i in arguments:
