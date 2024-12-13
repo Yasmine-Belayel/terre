@@ -1,6 +1,6 @@
 import sys
 code_letter = ord(sys.argv[1])
-for i in range(code_letter, 123):
-    print(chr(i), end='')
+for letter in range(code_letter, 123):
+    print(chr(letter), end='')
 print()
 print()
