@@ -1,4 +1,4 @@
-for i in range(97, 123):
-    print(chr(i), end ='')
+for letter in range(97, 123):
+    print(chr(letter), end ='')
 print()
 print()
