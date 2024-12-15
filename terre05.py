@@ -1,11 +1,11 @@
 import sys
 
-dividende = int(sys.argv[1])
-diviseur = int(sys.argv[2])
-if dividende >= diviseur > 0:
-    resultat = int(dividende / diviseur)
-    reste = dividende % diviseur
-    print(f"{dividende} / {diviseur} = {resultat}")
-    print(f"Reste: {reste}")
+dividend = int(sys.argv[1])
+divisor = int(sys.argv[2])
+if dividend >= divisor > 0:
+    result = int(dividend / divisor)
+    rest = dividend % divisor
+    print(f"{dividend} / {divisor} = {result}")
+    print(f"Reste: {rest}")
 else:
     print("ERREUR")
