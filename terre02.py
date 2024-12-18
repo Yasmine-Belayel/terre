@@ -1,5 +1,6 @@
 import sys
 
-liste_arguments = sys.argv[1:]
-for argument in liste_arguments:
+arguments = sys.argv[1:]
+
+for argument in arguments:
     print(argument)
